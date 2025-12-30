@@ -35,7 +35,7 @@ async def main(bot: Client, message: Message):
         await message.reply("**Your Are Already Logged In. First /logout Your Old Session. Then Do Login.**")
         return 
     user_id = int(message.from_user.id)
-    await message.reply("")
+    await message.reply("Hello 👋")
     api_id_msg = await bot.ask(user_id, "<b>Click on /skip .</b>", filters=filters.text)
     if api_id_msg.text == "/skip":
         api_id = API_ID
